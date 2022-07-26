@@ -20,6 +20,8 @@ export const AppProvider = ({children}) => {
     }
 
     const openSubmenu = (text,coordinates ) => {
+        const page = sublinks.find((link) => link.page === text) //checking if the button values is same for link value
+        setPage(page)
         setLocation(coordinates);
         setIsSubmenuOpen(true);
     }
@@ -37,7 +39,8 @@ export const AppProvider = ({children}) => {
         openSubmenu,
     closeSidebar,
     closeSubmenu,
-    location
+    location, 
+    page
     }}>{children}
     </Appcontext.Provider>
 
