@@ -7,8 +7,9 @@ const Navbar = () => {
 
     const {openSidebar,openSubmenu,closeSubmenu} = useGlobalContext();
 
-    const displaySubmenu = () =>{
-        console.log('helo');
+    const displaySubmenu = (e) =>{
+        const page = e.target.textContent;
+        console.log(page);
         openSubmenu();
     }
 
