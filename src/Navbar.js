@@ -8,9 +8,11 @@ const Navbar = () => {
     const {openSidebar,openSubmenu,closeSubmenu} = useGlobalContext();
 
     const displaySubmenu = (e) =>{
-        const page = e.target.textContent;
-        const temp = e.target.getBoundingClientRect()
-        console.log(temp);
+        const page = e.target.textContent; // return the values as product, developer etc when hover
+        const tempBtn = e.target.getBoundingClientRect() //mainly used for returnig the size
+        const center = (tempBtn.left + tempBtn.right) / 2 //return the center position 
+        const bottom = tempBtn.bottom - 3;
+        
         openSubmenu();
     }
 
