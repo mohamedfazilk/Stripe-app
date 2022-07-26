@@ -13,7 +13,7 @@ const Navbar = () => {
         const center = (tempBtn.left + tempBtn.right) / 2 //return the center position 
         const bottom = tempBtn.bottom - 3;
         
-        openSubmenu();
+        openSubmenu(page,{center,bottom});
     }
 
   return <nav className='nav'>
