@@ -2,7 +2,7 @@ import React,{useState,useEffect,useRef} from 'react'
 import { useGlobalContext } from './context'
 
 const Submenu = () => {
-    const {isSubmenuOpen, location} = useGlobalContext();
+    const {isSubmenuOpen, location, page:{page,links}} = useGlobalContext();
 
     const container = useRef(null) // using inline css in container
 
