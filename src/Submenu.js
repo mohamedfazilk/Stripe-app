@@ -9,12 +9,21 @@ const Submenu = () => {
     const [column, setColumn] = useState('col-2')
 
     useEffect(()=>{
+        setColumn('col-2')
         const submenu = container.current
         const {center, bottom} = location
         submenu.style.left = `${center}px`//center = left +right /2
         submenu.style.top = `${bottom}px` //top = bottom - 3px
 
-    }, [location])
+        if (links.length === 3){
+            setColumn('col-3')
+        }
+
+        if(links.length > 3){
+            setColumn('col-4')
+        }
+
+    }, [location, column])
   return (
     <aside className={`${isSubmenuOpen ? 'submenu show' :
     'submenu'}`} ref={container}>
