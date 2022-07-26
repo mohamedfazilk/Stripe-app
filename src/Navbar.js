@@ -36,6 +36,8 @@ const Navbar = () => {
             </li>
 
         </ul>
+
+        <button className='btn signin-btn'>Sign In</button>
     </div>
 
 
