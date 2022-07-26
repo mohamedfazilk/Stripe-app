@@ -27,7 +27,8 @@ const AppProvider = ({children}) => {
 
     
 
-    return <Appcontext.Provider value='hi'>{children}
+    return <Appcontext.Provider value={{isSidebarOpen,isSubmenuOpen,openSidebar,openSubmenu,
+    closeSidebar,closeSubmenu}}>{children}
     </Appcontext.Provider>
 
 }
