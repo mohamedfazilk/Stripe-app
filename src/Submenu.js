@@ -4,12 +4,14 @@ import { useGlobalContext } from './context'
 const Submenu = () => {
     const {isSubmenuOpen, location} = useGlobalContext();
 
+    const container = useRef(null) // using inline css in container
+
     useEffect(()=>{
 
     }, [location])
   return (
     <aside className={`${isSubmenuOpen ? 'submenu show' :
-    'submenu'}`}>
+    'submenu'}`} ref={container}>
     Submenudddddddddddddd
 </aside>    
   )
