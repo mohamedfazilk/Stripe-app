@@ -7,6 +7,10 @@ const Submenu = () => {
     const container = useRef(null) // using inline css in container
 
     useEffect(()=>{
+        const submenu = container.current
+        const {center, bottom} = location
+        submenu.style.left = `${center}px`//center = left +right /2
+        submenu.style.top = `${bottom}px` //top = bottom - 3px
 
     }, [location])
   return (
