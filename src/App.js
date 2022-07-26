@@ -6,7 +6,18 @@ import Sidebar from "./Sidebar";
 import Submenu from "./Submenu";
 
 function App() {
-  return <>fghjkl</>
-}
+  return(
+    <>
+    <Navbar/>
+    <Sidebar/>
+    <Hero/>
+    <Submenu/>
+
+
+    
+    </>
+
+
+  ) }
 
 export default App;
