@@ -6,6 +6,7 @@ const Submenu = () => {
         page:{page,links}} = useGlobalContext();
 
     const container = useRef(null) // using inline css in container
+    const [column, setColumn] = useState('col-2')
 
     useEffect(()=>{
         const submenu = container.current
