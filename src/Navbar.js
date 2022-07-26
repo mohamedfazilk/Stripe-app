@@ -9,7 +9,7 @@ const Navbar = () => {
 
     const displaySubmenu = (e) =>{
         const page = e.target.textContent; // return the values as product, developer etc when hover
-        const tempBtn = e.target.getBoundingClientRect() //mainly used for returnig the size
+        const tempBtn = e.target.getBoundingClientRect() //mainly used for returnig the location
         const center = (tempBtn.left + tempBtn.right) / 2 //return the center position 
         const bottom = tempBtn.bottom - 3;
         
