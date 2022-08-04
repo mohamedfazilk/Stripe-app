@@ -1,5 +1,4 @@
 import React from "react";
-import context from "./context";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Sidebar from "./Sidebar";
